@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>학생 성적 검색하기</p>
+
+    <br />
+    <div id="top" name="top">
+      <label>검색 조건: </label>
+      <select id="selectdg">
+        <option value="dept">학과</option>
+        <option value="grade">학년</option>
+      </select>
+      <span id="noewselect"></span>
+    </div>
+    <div>
+      <input type="checkbox" name="cb" id="quiz" /><label for="quiz"
+        >퀴즈</label
+      >
+      <input type="checkbox" name="cb" id="mid" /><label for="mid"
+        >중간 시험</label
+      >
+      <input type="checkbox" name="cb" id="fin" /><label for="fin"
+        >기말 시험</label
+      >
+    </div>
+    <input type="button" value="제출" id="submitBtn" />
+    <hr />
+    <div id="resultArea" name="resultArea"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./func.js"></script>
+  </body>
+</html>

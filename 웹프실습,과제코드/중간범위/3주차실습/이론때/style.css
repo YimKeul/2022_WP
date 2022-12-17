@@ -1,0 +1,37 @@
+#layout1 {
+  border: 10px solid red;
+  min-height: 90px;
+}
+#layout2 {
+  border: 10px solid yellow;
+  min-height: 90px;
+}
+#layout3 {
+  border: 10px solid black;
+  min-height: 90px;
+}
+#layout2-a {
+  border: 10px solid skyblue;
+  height: 90px;
+}
+
+#layout2-b {
+  border: 10px solid green;
+  height: 90px;
+}
+#layout2-c {
+  border: 10px solid pink;
+  height: 90px;
+}
+#layout2-d {
+  border: 10px solid gray;
+  height: 90px;
+}
+#layout2-e {
+  border: 10px solid brown;
+  height: 90px;
+}
+#layout2-f {
+  border: 10px solid gold;
+  height: 90px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="inputRegion">지역 : </label
+    ><input id="inputRegion" type="text" />
+    <br />
+    <br />
+    <div id="inputBoxArea">
+      <input id="firstRatio" type="text" placeholder="1차 접종" />
+
+      <input id="secondRatio" type="text" placeholder="2차 접종" />
+    </div>
+    <br />
+    <br />
+
+    <input type="button" value="저장" id="saveBtn" />
+    <input type="button" value="접종 추가" id="addBtn" />
+    <br />
+    <br />
+    <hr />
+    <label for="searchRegion">검색 지역 이름 : </label
+    ><input id="searchRegion" type="text" />
+    <input type="button" value="검색" />
+    <br />
+    <br />
+    <canvas
+      id="canvas_"
+      height="400"
+      width="600"
+      style="border: 3px solid black"
+    ></canvas>
+
+    <br />
+    <br />
+    <label>평균 접종률 : </label> <label id="resultAvg"></label>
+    <script src="./func.js"></script>
+  </body>
+</html>

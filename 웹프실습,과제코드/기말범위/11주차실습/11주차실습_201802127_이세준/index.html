@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>To-do list</h1>
+    <button id="read">Read</button>
+    <br />
+    <br />
+    <input type="text" id="addInput" />
+    <input type="button" id="addBtn" value="계획 추가" />
+    <br />
+    <br />
+    <div id="blank"></div>
+
+    <table>
+      <th>오늘</th>
+      <th>내일</th>
+      <tr>
+        <td>
+          <div
+            id="today"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+        </td>
+        <td>
+          <div
+            id="tomorrow"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+        </td>
+      </tr>
+    </table>
+    <script src="./function.js"></script>
+  </body>
+</html>

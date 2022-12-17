@@ -1,0 +1,17 @@
+.plan {
+    display : inline-block;
+    background-color: lightgray;
+    border : 1px solid black;
+    width : 100px;
+    margin : 5px;
+}
+
+.contentrow {
+    height : 500px;
+    width : 200px;
+}
+
+table, th, td, tr {
+    border : 1px solid black;
+    border-collapse: collapse;
+}

@@ -1,0 +1,33 @@
+#LoginBox {
+  display: flex;
+  justify-content: right;
+}
+#LoginInfo {
+  color: #263eff;
+  margin-right: 10px;
+  font-weight: bold;
+}
+#ShowTable {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+table,
+th,
+td {
+  border: 2px solid #dcdddc;
+  border-collapse: collapse;
+}
+table {
+  width: 100%;
+}
+th {
+  background-color: #a263ff;
+  height: 30px;
+  color: white;
+}
+
+td {
+  text-align: center;
+}

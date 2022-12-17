@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="201802127 이세준" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, XML, XHTML, JavaScript, 충남대, 웹프로그래밍"
+    />
+    <title>2022웹프로그래밍</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>2002 웹프로그래밍</h1>
+    <h2>과목 소개</h2>
+    <h3>교과 목표</h3>
+    <p>
+      웹프로그래밍에 대해 정확히 이해하고 프로그래밍 할 수 있다. 웹프로그래밍
+      언어를 사용하여 최신 표준기술을 이용한 웹페이지를 만든다.<br />
+      웹프로그래밍 지식을 통해 이를 활용할 수 있는
+      <strong>웹 사이트를 설계하고 구축</strong>한다.
+    </p>
+
+    <h3>수업운영방식</h3>
+    <ol>
+      <li>
+        Flipped Learning방식
+        <ul>
+          <li>이론 수업 전 예습 : 이론 강의 동영상을 통해 예습</li>
+        </ul>
+      </li>
+      <li>
+        이론 수업
+        <ul>
+          <li>그룹 중심의 토론 및 문제 해결</li>
+        </ul>
+      </li>
+      <li>
+        실습 수업
+        <ul>
+          <li>개별적으로 실습 과제를 해결</li>
+          <li>수업 시간 내에 제출해야 만점 처리</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>사용하는 기술 소개</h2>
+
+    <table>
+      <tr>
+        <th rowspan="2">분류</th>
+        <th colspan="2">클라이언트 웹 기술</th>
+        <th>서버 기술</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>CSS</td>
+        <td>PHP</td>
+      </tr>
+      <tr>
+        <th>이미지</th>
+        <td><img src="./images/html.svg" alt="html" width="100" /></td>
+        <td><img src="./images/css.svg" alt="css" width="100" /></td>
+        <td><img src="./images/php.svg" alt="php" width="100" /></td>
+      </tr>
+      <tr>
+        <th>관련링크</th>
+        <td>
+          <a href="https://namu.wiki/w/HTML" target="_blank">나무위키</a>
+        </td>
+        <td><a href="https://namu.wiki/w/CSS" target="_blank">나무위키</a></td>
+        <td><a href="https://namu.wiki/w/PHP" target="_blank">나무위키</a></td>
+      </tr>
+    </table>
+    <h2>참고사이트</h2>
+    <iframe
+      src="https://kim-mj.tistory.com/162"
+      width="700"
+      height="700"
+    ></iframe>
+    <hr />
+    <h2>선호도 조사</h2>
+
+    <form action="/survey.php" target="_blank" method="post">
+      <p>
+        본인이 좋아하는 수업 내용 선택 :
+        <select name="class">
+          <option value="">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+          <option value="htmlapi">HTML API</option>
+          <option value="php">PHP</option>
+        </select>
+      </p>
+      <p>이유를 간략히 쓰시오 :</p>
+
+      <input
+        type="text"
+        style="width: 300px; height: 100px"
+        placeholder="간략하게 100자 이내로 작성하시오."
+      />
+      <br />
+      <input type="submit" title="제출" />
+      <input type="reset" title="초기화" />
+    </form>
+  </body>
+</html>

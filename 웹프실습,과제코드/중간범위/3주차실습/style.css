@@ -1,0 +1,56 @@
+#교과목표,
+#수업운영방식,
+#기술소개,
+#참고사이트,
+#선호도조사 {
+  padding: 20px;
+}
+h2 {
+  padding-bottom: 20px;
+  color: blueviolet;
+  font-weight: 300;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+hr {
+  border: solid 5px green;
+}
+
+h3 {
+  font-weight: 200;
+  padding-top: 10px;
+  color: cornflowerblue;
+}
+
+#inner_container {
+  margin: 30px;
+  padding: 30px;
+  border: 10px #dddddd solid;
+}
+table,
+td,
+tr,
+th {
+  width: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td:hover {
+  background-color: yellow;
+}
+img {
+  padding: 5px;
+  border: 3px red solid;
+  width: 100%;
+}
+
+#title {
+  text-align: center;
+  font-weight: 500;
+  color: blue;
+  padding: 20px;
+  font-family: "Black Han Sans", sans-serif;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Header">
+      <h1>To do List</h1>
+      <div class="Menu">
+        <button id="openBtn">추가</button>
+        <select name="Sorting" id="sortingBox">
+          <option value="base">====정렬기준 선택====</option>
+          <option value="primary">우선순위 정렬</option>
+          <option value="name">이름순 정렬</option>
+          <option value="time">시간순 정렬</option>
+        </select>
+      </div>
+    </div>
+
+    <table>
+      <tr>
+        <th>SUN</th>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WEN</th>
+        <th>TUR</th>
+        <th>FRI</th>
+        <th>SAT</th>
+      </tr>
+      <tr id="tablebody">
+        <td class="todoBox"></td>
+        <td class="todoBox"></td>
+        <td class="todoBox"></td>
+        <td class="todoBox"></td>
+        <td class="todoBox"></td>
+        <td class="todoBox"></td>
+        <td class="todoBox"></td>
+      </tr>
+    </table>
+
+    <!-- 모달창 -->
+    <div class="modal hidden">
+      <div class="bg"></div>
+      <div class="modalBox">
+        <button id="closeBtn">X</button>
+        <div>
+          일정 : <input type="text" id="inputText" />
+          중요도 :
+          <select name="Import" id="importBox">
+            <option value="상">상</option>
+            <option value="중">중</option>
+            <option value="하">하</option>
+          </select>
+        </div>
+        <div>
+          요일 :
+          <select id="weekStart">
+            <option value="0">일</option>
+            <option value="1">월</option>
+            <option value="2">화</option>
+            <option value="3">수</option>
+            <option value="4">목</option>
+            <option value="5">금</option>
+            <option value="6">토</option>
+          </select>
+          ~
+          <select id="weekFin">
+            <option value="0">일</option>
+            <option value="1">월</option>
+            <option value="2">화</option>
+            <option value="3">수</option>
+            <option value="4">목</option>
+            <option value="5">금</option>
+            <option value="6">토</option>
+          </select>
+        </div>
+
+        <div>
+          시간 : <input type="time" id="timeStart" /> ~
+          <input type="time" id="timeFin" />
+        </div>
+
+        <input type="submit" value="등록" id="submitBtn" />
+        <input type="submit" value="취소" id="closeModalBtn" />
+      </div>
+    </div>
+
+    <!-- 모달창 수정용 -->
+    <div class="modal2 hidden">
+      <div class="bg2"></div>
+      <div class="modalBox2">
+        <button id="closeBtn2">X</button>
+        <div>
+          일정 : <input type="text" id="inputText2" />
+          중요도 :
+          <select name="Import" id="importBox2">
+            <option value="상">상</option>
+            <option value="중">중</option>
+            <option value="하">하</option>
+          </select>
+        </div>
+        <div>
+          요일 :
+          <select id="weekStart2">
+            <option value="0">일</option>
+            <option value="1">월</option>
+            <option value="2">화</option>
+            <option value="3">수</option>
+            <option value="4">목</option>
+            <option value="5">금</option>
+            <option value="6">토</option>
+          </select>
+          ~
+          <select id="weekFin2">
+            <option value="0">일</option>
+            <option value="1">월</option>
+            <option value="2">화</option>
+            <option value="3">수</option>
+            <option value="4">목</option>
+            <option value="5">금</option>
+            <option value="6">토</option>
+          </select>
+        </div>
+
+        <div>
+          시간 : <input type="time" id="timeStart2" /> ~
+          <input type="time" id="timeFin2" />
+        </div>
+
+        <input type="submit" value="수정" id="editBtn" class="editBtn" />
+        <input
+          type="submit"
+          value="수정완료"
+          id="editFinBtn"
+          class="editFinBtn hidden"
+        />
+        <input type="submit" value="삭제" id="deletBtn" />
+        <input type="submit" value="취소" id="closeModal2Btn" />
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="./index.js"></script>
+  </body>
+</html>

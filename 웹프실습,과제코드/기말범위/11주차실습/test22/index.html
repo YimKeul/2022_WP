@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>To-do list</h1>
+    <input id="read_btn" type="button" value="Read" />
+    <br /><br />
+    <input id="text" type="input" /><input
+      id="add_btn"
+      type="button"
+      value="계획 추가"
+    />
+    <br /><br />
+    <table>
+      <tr>
+        <th>오늘</th>
+        <th>내일</th>
+      </tr>
+      <tr>
+        <td>
+          <div
+            id="today"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+        </td>
+        <td>
+          <div
+            id="tommorow"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+        </td>
+      </tr>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="func.js"></script>
+  </body>
+</html>

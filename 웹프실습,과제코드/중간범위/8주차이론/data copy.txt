@@ -1,0 +1,5 @@
+{"name":"홍길동","birthdate":"2005-07-25","weight":70}
+{"name":"이순신","birthdate":"2005-11-16","weight":75}
+{"name":"이도훈","birthdate":"2005-02-08","weight":72}
+{"name":"장민호","birthdate":"2006-01-24","weight":78}
+{"name":"홍민호","birthdate":"2004-12-01","weight":82}

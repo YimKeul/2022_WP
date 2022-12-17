@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  color: #038b8b;
+}
+#Title {
+  width: 90%;
+}
+#Director {
+  width: 15%;
+}
+
+.Labels {
+  font-weight: bold;
+  display: inline-block;
+  width: 6%;
+  margin-right: 1%;
+}
+#ActorBox {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.Actor,
+#Date {
+  margin-right: 10px;
+}
+
+/* #E8F0FE */

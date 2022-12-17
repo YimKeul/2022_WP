@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>PUZZLE GAME</h2>
+    <div id="image_div">
+      <img
+        id="img1"
+        src="image/1.png"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+      <img
+        id="img2"
+        src="image/2.png"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+      <img
+        id="img3"
+        src="image/3.png"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+      <img
+        id="img4"
+        src="image/4.png"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+      <img
+        id="img5"
+        src="image/5.png"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+      <img
+        id="img6"
+        src="image/6.png"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+      <img
+        id="img7"
+        src="image/7.png"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+      <img
+        id="img8"
+        src="image/8.png"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+      <img
+        id="img9"
+        src="image/9.png"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+    </div>
+    <table id="puzzle">
+      <tr>
+        <td id="td1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td id="td2" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td id="td3" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+      </tr>
+      <tr>
+        <td id="td4" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td id="td5" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td id="td6" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+      </tr>
+      <tr>
+        <td id="td7" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td id="td8" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td id="td9" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+      </tr>
+    </table>
+    <input id="readBtn" type="button" value="Read" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="func.js"></script>
+  </body>
+</html>

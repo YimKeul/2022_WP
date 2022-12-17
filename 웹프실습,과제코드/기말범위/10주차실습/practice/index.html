@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Ajax를 이용하여 데이터 추가와 검색하기</p>
+    추가할 데이터 :
+    <input type="text" id="inputDet" name="inputDet" placeholder="학과" />
+    <input type="text" id="inputName" name="inputName" placeholder="이름" />
+    <input type="button" id="addBtn" name="addBtn" value="추가하기" />
+
+    <br />
+    <div id="save"></div>
+    <br />
+
+    검색 단어 : <input type="text" name="inputSearch" id="inputSearch" />
+    <input type="radio" name="type" id="det" checked />
+    <label for="det">학과</label>
+    <input type="radio" name="type" id="name" />
+    <label for="name">학생이름</label>
+    <br />
+    <ol id="_ol"></ol>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./func.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SaveMovieStyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>영화 저장 페이지</h1>
+    <form
+      action="./SaveMovieServer.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="Title" id="Titlelabel" class="Labels">영화 제목</label>
+      <input type="text" id="Title" name="Title" />
+      <br />
+      <br />
+
+      <label for="GenreBox" id="Genrelabel" class="Labels">장르</label>
+
+      <select name="Genre" id="GenreBox">
+        <option value="drama">드라마</option>
+        <option value="action">액션</option>
+        <option value="animation">애니메이션</option>
+        <option value="comedy">코메디</option>
+      </select>
+      <br />
+      <br />
+      <label id="Directorlabel" class="Labels">감독</label>
+      <input type="text" id="Director" name="Director" />
+      <br />
+      <br />
+      <label id="Actorlabel" class="Labels">출연자</label>
+      <div id="ActorBox">
+        <input type="text" class="Actor" name="Actor[]" />
+      </div>
+      <input type="button" id="AddActor" value="출연자 추가" />
+      <input type="button" id="DelActor" value="출연자 삭제" />
+      <br />
+      <br />
+      <label id="Datelabel" class="Labels">상영 날짜</label>
+      <input type="date" id="Date" name="Date" />
+      <input type="button" id="SearchPlace" value="상영관 검색" />
+      <input
+        type="button"
+        id="AddInfo"
+        class="Input"
+        value="상영 정보 추가"
+        disabled
+      />
+      <br />
+
+      <br />
+      <label id="Placelabel" class="Labels">상영 장소</label>
+      <label for="Place">상영관1</label>
+      <input
+        type="radio"
+        value="상영관1"
+        class="Place"
+        name="PlaceRadio"
+        disabled
+      />
+      <label for="Place">상영관2</label>
+      <input
+        type="radio"
+        value="상영관2"
+        class="Place"
+        name="PlaceRadio"
+        disabled
+      />
+      <label for="Place">상영관3</label>
+      <input
+        type="radio"
+        value="상영관3"
+        class="Place"
+        name="PlaceRadio"
+        disabled
+      />
+      <br />
+      <div id="AddInfoBox"></div>
+      <br />
+      <label id="Posterlabel" class="Labels">포스터 화일</label>
+      <input type="file" name="fileToUpload" id="fileToUpload" />
+      <br />
+      <br />
+      <label id="SubmitBtnlabel" class="Labels"></label>
+      <input type="submit" value="저장하기" id="SubmitBtn" />
+    </form>
+    <script src="./SaveMovieFunction.js"></script>
+  </body>
+</html>

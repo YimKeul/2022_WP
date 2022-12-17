@@ -1,0 +1,28 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>2022년 : HTML API 그룹 퀴즈</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="drag_quiz.css" />
+  </head>
+  <body id="bb1">
+    <div id="div1">
+      <img id="img1" src="img1.jpeg" draggable="true" /><img
+        id="img2"
+        src="img2.jpeg"
+        draggable="true"
+      /><img id="img3" src="img3.jpeg" draggable="true" /><img
+        id="img4"
+        src="img4.jpeg"
+        draggable="true"
+      /><img id="img5" src="img5.jpeg" draggable="true" />
+    </div>
+    <br /><button id="bt1" type="button">Read</button>
+
+    <p>A 장바구니</p>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <p>B 장바구니</p>
+    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <script src="drag_quiz.js"></script>
+  </body>
+</html>

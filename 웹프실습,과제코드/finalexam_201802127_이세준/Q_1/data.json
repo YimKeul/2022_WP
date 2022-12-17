@@ -1,0 +1,10 @@
+{"dept":"computer","name":"Hong gildong","grade":"second","quiz_score":[6, 10, 10, 8, 10],"mid_exam":92, "final_exam":100}
+{"dept":"computer","name":"Han minji","grade":"second","quiz_score":[0, 8, 9, 10, 6],"mid_exam":80, "final_exam":90}
+{"dept":"bioinformatics","name":"Ha janghoon","grade":"fourth","quiz_score":[10, 10, 10, 4, 9],"mid_exam":78, "final_exam":74}
+{"dept":"computer","name":"Kim sunshin","grade":"third","quiz_score":[8, 9, 10, 8, 8],"mid_exam":100, "final_exam":88}
+{"dept":"bioinformatics","name":"Kang dohoon","grade":"third","quiz_score":[9, 6, 6, 4, 8],"mid_exam":63, "final_exam":84}
+{"dept":"electronics","name":"Ko minho","grade":"second","quiz_score":[5, 10, 9, 5, 5],"mid_exam":98, "final_exam":98}
+{"dept":"electronics","name":"Ki sungmin","grade":"second","quiz_score":[10, 10, 4, 8, 8],"mid_exam":84, "final_exam":80}
+{"dept":"computer","name":"Son minyoung","grade":"second","quiz_score":[8, 6, 6, 9, 10],"mid_exam":96, "final_exam":72}
+{"dept":"bioinformatics","name":"Song inwoo","grade":"third","quiz_score":[6, 0, 2, 6, 4],"mid_exam":60, "final_exam":66}
+{"dept":"electronics","name":"Park chanwoo","grade":"fourth","quiz_score":[6, 8, 10, 8, 10],"mid_exam":100, "final_exam":74}
